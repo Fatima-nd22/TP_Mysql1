@@ -29,7 +29,7 @@ function UpdatePersonne(ID, nom, login) {
       console.error('Erreur sur la requête de modification:', err.message);
       return;
     }
-    console.log('Modification effectuée avec succès');
+    console.log('Modification effectuée ');
   });
 }
 
