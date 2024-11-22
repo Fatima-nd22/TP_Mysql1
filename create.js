@@ -18,7 +18,7 @@ db.query(sql,[ID],(err,result)=>{
     console.error('Erreur sur la requete suppression:',err.message);
     return;
   }
-  console.log('Suppression effectuee avec succee');
+  console.log('Suppression effectuee ');
 });
 }
 
@@ -44,4 +44,9 @@ db.query(sql,(err,results) =>{
 })
 }
 
+<<<<<<< HEAD
 module.exports = {addPersonne,delPersonne,UpdatePersonne,ListePersonne};
+=======
+
+module.exports = {addPersonne,delPersonne,UpdatePersonne};
+>>>>>>> 99e880203db45fef5c2680e6d52022fbccd3c82c
