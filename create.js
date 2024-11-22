@@ -33,6 +33,15 @@ function UpdatePersonne(ID, nom, login) {
   });
 }
 
+function ListePersonne (){
+const sql = 'SELECT * FROM Personne';
+db.query(sql,(err,results) =>{
+  if(err) {
+    console.error('Erreur sur la requete select',err.message);
+    return;
+  }
+  console.log('Personne: ',err,results);
+})
+}
 
-
-module.exports = {addPersonne,delPersonne,UpdatePersonne};
+module.exports = {addPersonne,delPersonne,UpdatePersonne,ListePersonne};
