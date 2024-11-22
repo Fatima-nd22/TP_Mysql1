@@ -18,7 +18,7 @@ db.query(sql,[ID],(err,result)=>{
     console.error('Erreur sur la requete suppression:',err.message);
     return;
   }
-  console.log('Suppression effectuee avec succee');
+  console.log('Suppression effectuee ');
 });
 }
 
